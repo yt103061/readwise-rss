@@ -1,7 +1,9 @@
 import NodeCache from "node-cache";
+import type { ArticleItem } from "../rss/generator";
 
 export interface CacheEntry {
   feedXml: string;
+  articles: ArticleItem[];
   lastUpdated: Date;
   itemCount: number;
 }
